@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Preço</title>
+    <link rel="stylesheet" href="style.css">
+
+<h2>Gerador de preço</h2>
+
+<br>
+
+
+
+<body>
+
+
+<form action="gerarPreco">
+
+<h4>Preencha as informações abaixo:</h4>
+
+<label>Nome do Produto: </label>
+<input type="text" id="nomeProduto" required placeholder="Topo de Bolo">
+
+<br><br>
+
+
+<h4>Selecione as Matérias-primas</h4>
+
+<div class="materias-primas">
+
+    <div class="item">
+        <select>
+            <option>Papel Fotográfico</option>
+            <option>Papel 180g Colorido</option>
+            <option>Papel 230g Metalizado</option>
+            <option>Canudo de papel</option>
+            <option>Cola Quente</option>
+            <option>Mexedor pequeno</option>
+        </select>
+
+        <input
+            type="number"
+            placeholder="Quantidade">
+    </div>
+
+</div>
+
+<button type="button">
+    +Add Matéria-Prima
+</button>
+
+<br><br>
+
+<label>
+    <strong>
+
+Margem de Lucro (%)
+    </strong>
+    
+</label>
+<input type="number" id="margemLucro" step="0.01" required placeholder="50">
+
+<br><br>
+
+<br><br>
+
+<button onclick="calcular()">Calcular</button>
+
+<a href="index.html">
+            <button type="button">Voltar</button>
+        </a>
+
+<h2 id="resultado"></h2>
+
+</form>
+
+</body>
+
+<footer>
+    <p class="center">Direitos Reservaados MaWon Price - 2024</p>
+</footer>
